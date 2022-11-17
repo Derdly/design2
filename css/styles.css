@@ -2,17 +2,15 @@ p {
 	font-family: Garamond, Times New Roman, serif;
 	font-size: 1.2em;
 	color: black;
-	width: 700px;
-	position:absolute;
-	left: 700px;
+
 }
 
 H1 {
 	font-family: Pacifico, Arial, sans-serif;
 	font-size: 4.5em;
 	color: #F7D665;
-	position:absolute;
-	left:160px;
+	margin:0;
+
 	}
   .lblue {
   	background-color: #9CC0DF;
@@ -24,11 +22,7 @@ H1 {
         color: #FFFFFF;
         }
         img {
-            width:800px; /* you can use % */
-            height: auto;
-						position: absolute;
-						right: 1100px;
-						bottom: 50px;
+            max-width:100%;
         }
         .center {
           margin: auto;
@@ -40,8 +34,20 @@ H1 {
 						background-color:white;
 					}
 .video {
-	position:absolute;
-	top:900px;
-	left:100px;
+	bottom:2em;
 
+}
+
+.left {
+	width: calc(50% - 2em);
+	float:left;
+	display:inline-block;
+	padding:1em;
+	position:fixed;
+}
+.right {
+	width: calc(50% - 2em);
+	float:right;
+	display:inline-block;
+	padding:1em;
 }
